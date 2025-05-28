@@ -2,10 +2,311 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Můj první web na Netlify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasik939 - Osobní web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Ahoj světe!</h1>
-    <p>Toto je můj první testovací web nasazený přes Netlify.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Sasik939</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Domů</a>
+                <a href="#about" class="nav-link">O mně</a>
+                <a href="#skills" class="nav-link">Dovednosti</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#values" class="nav-link">Hodnoty</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ahoj, jsem <span class="highlight">Sasik939</span></h1>
+                <p class="hero-subtitle">Člověk, který chce žít život podle svých představ a věří v sílu autenticity, svobody a lidského přístupu.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Poznej mě</a>
+                    <a href="#contact" class="btn btn-secondary">Kontakt</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">O mně a můj příběh</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Jsem člověk, který chce žít život podle svých představ a nenechat se svazovat dobou nebo okolím. Věřím v sílu autenticity, svobody a lidského přístupu – a to nejen v osobním životě, ale i v práci.</p>
+
+                    <p>Mou vizí je jednou vést tým, kde budu nejen lídrem, ale hlavně člověkem, který umí druhé motivovat, podporovat a chápat jejich individuální cesty.</p>
+
+                    <p>K umělé inteligenci mě přivedla kamarádka a zůstala mi blízká díky tomu, jak dokáže AI vysvětlovat i složité věci jednoduše, bez předsudků a bez soudů. Umožnila mi pochopit znalosti, které bych si dříve ani nedokázal představit, že zvládnu.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>∞</h3>
+                        <p>Možností k růstu</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Autenticity</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Učení se</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Dovednosti a zkušenosti</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Umělá inteligence</h3>
+                    <p>Práce s AI agenty, chatboty, datovou analýzou a automatizací</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Webové aplikace</h3>
+                    <p>Praktické zkušenosti s vývojem webových aplikací a technologií</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Učení se</h3>
+                    <p>Rád se učím nové věci a nebojím se chybovat – vnímám to jako silnou stránku</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Týmová práce</h3>
+                    <p>Komunikace, podpora týmu, pozitivní přístup k řešení problémů</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Flexibilita</h3>
+                    <p>Určování priorit, zdravě nastavené hodnoty, adaptabilita</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn profil</h3>
+                    <p>Více informací najdete na mém profesním profilu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio / Projekty</h2>
+            <div class="portfolio-content">
+                <div class="portfolio-text">
+                    <p>Největším projektem je pro mě samotný život – ať už jde o profesní růst, nebo osobní výzvy. V poslední době jsem nejvíc hrdý na práci, kterou jsem dělal jako zadání do nové práce.</p>
+                    <p>V každém projektu hledám nové možnosti, jak růst a posouvat se dál.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Profesní růst</h3>
+                        <p>Kontinuální rozvoj dovedností a hledání nových výzev</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>Osobní výzvy</h3>
+                        <p>Překonávání hranic a dosahování osobních cílů</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Nové projekty</h3>
+                        <p>Hledání příležitostí pro růst a inovace</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="values">
+        <div class="container">
+            <h2 class="section-title">Hodnoty a přístup</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Pozitivní přístup</h3>
+                    <p>Věřím, že cesta je cíl a s úsměvem jde všechno lépe.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Správné priority</h3>
+                    <p>Důležité je umět si správně nastavit priority, být flexibilní a držet se hodnot, které dávají životu i práci smysl.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Týmová spolupráce</h3>
+                    <p>K týmové spolupráci přistupuji velmi pozitivně – věřím, že společně můžeme dosáhnout víc, pokud se vzájemně respektujeme a podporujeme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Blog / Postřehy</h2>
+            <div class="blog-content">
+                <div class="blog-text">
+                    <p>Zajímá mě smysl života a pohled lidí na svět – rád přemýšlím nad tím, co nás dělá šťastnými a co nás motivuje k dalším krokům.</p>
+                    <p>Inspiraci nacházím i v kanálech jako Diary of CEO a dalších, které lidsky vysvětlují nejen technická témata, ale i finance nebo mezilidské poznatky.</p>
+                    <p>Rád bych v budoucnu psal víc o smyslu života, hodnotách a osobním růstu.</p>
+                </div>
+                <div class="blog-topics">
+                    <div class="topic-tag">Smysl života</div>
+                    <div class="topic-tag">Osobní růst</div>
+                    <div class="topic-tag">Hodnoty</div>
+                    <div class="topic-tag">Motivace</div>
+                    <div class="topic-tag">Technologie</div>
+                    <div class="topic-tag">Finance</div>
+                    <div class="topic-tag">Mezilidské vztahy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2 class="section-title">Život mimo práci / Zájmy</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Malování</h3>
+                    <p>Ve volném čase rád maluji a vyjadřuji svou kreativitu</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Skákání přes švihadlo</h3>
+                    <p>Můj velký koníček už ze základní školy. Letos jsem se k tomu vrátil v rámci charitativní výzvy v lednu</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Cvičení</h3>
+                    <p>Pravidelné cvičení pro zdravé tělo i mysl</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Společenské aktivity</h3>
+                    <p>Rád trávím čas venku se společností a dělám věci, které mají smysl</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Charita</h3>
+                    <p>Rád dělám věci, které pomáhají ostatním a přinášejí radost</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>Momentálně nemám veřejný kontaktní e-mail, ale můžete mě kontaktovat přes profesní sítě jako LinkedIn nebo GitHub.</p>
+                    <p>Otevřený jsem jakékoliv spolupráci, která má potenciál do budoucna a může mě posunout – ať už jde o konzultace, vývoj nebo nové výzvy.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="#" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email na vyžádání</span>
+                    </a>
+                </div>
+                <div class="contact-note">
+                    <p><strong>Reference / Doporučení:</strong> Zatím nemám zveřejněné konkrétní reference nebo citace od kolegů, ale v případě zájmu mohu dodat na vyžádání.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Sasik939. Vytvořeno s láskou a autenticitou.</p>
+                <div class="footer-links">
+                    <a href="#home">Nahoru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
