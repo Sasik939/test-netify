@@ -68,16 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Add some interactive effects
-document.querySelectorAll('.skill-card, .value-card, .interest-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-10px) scale(1.02)';
-    });
-    
-    card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1)';
-    });
-});
+// Removed scaling animations for professional look
 
 // Typing effect for hero title
 function typeWriter(element, text, speed = 100) {
@@ -104,14 +95,7 @@ window.addEventListener('load', () => {
     }
 });
 
-// Add parallax effect to hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
+// Removed parallax effect for better performance and no overlapping issues
 
 // Contact form functionality (if needed in future)
 function handleContactForm() {

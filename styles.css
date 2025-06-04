@@ -87,7 +87,8 @@ html {
     align-items: center;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .hero-container {
@@ -172,7 +173,9 @@ html {
 
 /* Section Styles */
 section {
-    padding: 5rem 0;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
 }
 
 .section-title {
@@ -240,11 +243,11 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .skill-icon {
@@ -327,11 +330,11 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .value-card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .value-icon {
@@ -397,11 +400,11 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .interest-card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .interest-icon {
