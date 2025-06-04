@@ -90,8 +90,8 @@ function typeWriter(element, text, speed = 100) {
 window.addEventListener('load', () => {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
-        typeWriter(heroTitle, originalText, 50);
+        // Set the final content without typing effect to avoid HTML display issues
+        heroTitle.innerHTML = 'Ahoj, jsem <span class="highlight">Adam</span>';
     }
 });
 
